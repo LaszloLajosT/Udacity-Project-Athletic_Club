@@ -9,8 +9,6 @@
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:configChanges="orientation"
-        android:screenOrientation="portrait"
         tools:context=".MainActivity">
 
         <ImageView
@@ -18,12 +16,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/track" />
+            android:src="@drawable/track"
+            android:contentDescription="@string/contentDescription" />
 
         <TextView
             android:id="@+id/cityname"
             android:layout_width="265dp"
-
             android:layout_height="100dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
@@ -36,8 +34,7 @@
             android:paddingTop="20dp"
             android:paddingRight="16dp"
             android:paddingBottom="8dp"
-
-            android:text="Bournemouth"
+            android:text="@string/business_city"
             android:textColor="@android:color/white" />
 
         <TextView
@@ -49,7 +46,7 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:paddingBottom="16dp"
-            android:text="Athletic Club"
+            android:text="@string/business_name"
             android:textColor="@android:color/white"
             android:textSize="36sp" />
 
@@ -62,7 +59,7 @@
             android:paddingTop="30dp"
             android:paddingRight="16dp"
             android:paddingBottom="24sp"
-            android:text="Contact the club:"
+            android:text="@string/contact_text"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -78,7 +75,7 @@
             android:paddingBottom="8dp"
             android:textColorLink="@android:color/white"
             android:autoLink="phone"
-            android:text="+447766433090"
+            android:text="@string/business_phone_number"
             android:textAppearance="?android:textAppearanceSmall"
              />
 
@@ -93,7 +90,7 @@
             android:paddingBottom="8dp"
             android:autoLink="email"
             android:textColorLink="@android:color/white"
-            android:text="secretary@bournemouthac.co.uk"
+            android:text="@string/business_email"
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/white" />
 
@@ -106,7 +103,7 @@
             android:paddingTop="30dp"
             android:paddingRight="16dp"
             android:paddingBottom="24dp"
-            android:text="Address:"
+            android:text="@string/address_text"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -120,7 +117,7 @@
             android:paddingTop="0dp"
             android:paddingRight="16dp"
             android:paddingBottom="8dp"
-            android:text="Kings Park Athletic Centre,"
+            android:text="@string/business_address_part1"
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/white" />
 
@@ -133,7 +130,7 @@
             android:paddingTop="0dp"
             android:paddingRight="16dp"
             android:paddingBottom="8dp"
-            android:text="Kings Park Drive,"
+            android:text="@string/business_address_part2"
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/white" />
 
@@ -146,7 +143,7 @@
             android:paddingTop="0dp"
             android:paddingRight="16dp"
             android:paddingBottom="8dp"
-            android:text="Bournemouth"
+            android:text="@string/business_city"
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/white" />
 
@@ -161,7 +158,7 @@
             android:paddingTop="0dp"
             android:paddingRight="16dp"
             android:paddingBottom="8dp"
-            android:text="BH7 6JD"
+            android:text="@string/business_postcode"
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/white"
             android:textColorLink="@android:color/white" />
@@ -175,7 +172,7 @@
             android:fontFamily="sans-serif-light"
             android:paddingRight="16dp"
             android:paddingBottom="24dp"
-            android:text="Since 1906"
+            android:text="@string/business_founded"
             android:textColor="@android:color/white"
             android:textSize="12sp" />
 

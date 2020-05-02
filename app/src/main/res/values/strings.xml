@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Athletic Club</string>
+    <string name="contentDescription">track image</string>
+    <string name="contact_text">Contact the club:</string>
+    <string name="address_text">Address:</string>
+
+    <string name="business_city">Bournemouth</string>
+    <string name="business_name">Athletic Club</string>
+    <string name="business_phone_number">+447766433090</string>
+    <string name="business_email">secretary@bournemouthac.co.uk</string>
+    <string name="business_address_part1">Kings Park Athletic Centre,</string>
+    <string name="business_address_part2">Kings Park Drive,</string>
+    <string name="business_postcode">BH7 6JD</string>
+    <string name="business_founded">Since 1906</string>
 </resources>
