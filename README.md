@@ -25,3 +25,6 @@ Info about a special interest group (like a club or sports team) you’re part o
     
     ~  Hours of operation
     
+<p align="center">
+     <img src="screenshot.png" width="394" height="552" />
+</p>
