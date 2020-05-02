@@ -8,31 +8,37 @@
     <RelativeLayout
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:configChanges="orientation"
         android:screenOrientation="portrait"
         tools:context=".MainActivity">
 
         <ImageView
             android:id="@+id/photo_Image_view"
-            android:src="@drawable/track"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/track" />
 
         <TextView
             android:id="@+id/cityname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="265dp"
+
+            android:layout_height="100dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:paddingTop="20dp"
+            android:layout_marginTop="0dp"
+            android:autoSizeMaxTextSize="100sp"
+            android:autoSizeMinTextSize="36sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
             android:paddingLeft="16dp"
+            android:paddingTop="20dp"
             android:paddingRight="16dp"
             android:paddingBottom="8dp"
+
             android:text="Bournemouth"
-            android:textColor="@android:color/white"
-            android:textSize="36sp" />
+            android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/club"
@@ -51,13 +57,13 @@
             android:id="@+id/contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contact the club:"
-            android:textAppearance="?android:textAppearanceLarge"
             android:layout_below="@+id/club"
             android:layout_alignParentRight="true"
-            android:paddingRight="16dp"
             android:paddingTop="30dp"
+            android:paddingRight="16dp"
             android:paddingBottom="24sp"
+            android:text="Contact the club:"
+            android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
@@ -65,39 +71,43 @@
             android:id="@+id/phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+447766433090"
-            android:textAppearance="?android:textAppearanceSmall"
             android:layout_below="@+id/contact"
             android:layout_alignParentRight="true"
-            android:paddingRight="16dp"
             android:paddingTop="0dp"
+            android:paddingRight="16dp"
             android:paddingBottom="8dp"
-            android:textColor="@android:color/white" />
+            android:textColorLink="@android:color/white"
+            android:autoLink="phone"
+            android:text="+447766433090"
+            android:textAppearance="?android:textAppearanceSmall"
+             />
 
         <TextView
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="secretary@bournemouthac.co.uk"
-            android:textAppearance="?android:textAppearanceSmall"
             android:layout_below="@+id/phone"
             android:layout_alignParentRight="true"
-            android:paddingRight="16dp"
             android:paddingTop="0dp"
+            android:paddingRight="16dp"
             android:paddingBottom="8dp"
+            android:autoLink="email"
+            android:textColorLink="@android:color/white"
+            android:text="secretary@bournemouthac.co.uk"
+            android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Address:"
-            android:textAppearance="?android:textAppearanceLarge"
             android:layout_below="@+id/email"
             android:layout_alignParentRight="true"
-            android:paddingRight="16dp"
             android:paddingTop="30dp"
+            android:paddingRight="16dp"
             android:paddingBottom="24dp"
+            android:text="Address:"
+            android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
@@ -105,63 +115,66 @@
             android:id="@+id/placename"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kings Park Athletic Centre,"
-            android:textAppearance="?android:textAppearanceSmall"
             android:layout_below="@+id/address"
             android:layout_alignParentRight="true"
-            android:paddingRight="16dp"
             android:paddingTop="0dp"
+            android:paddingRight="16dp"
             android:paddingBottom="8dp"
+            android:text="Kings Park Athletic Centre,"
+            android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/street"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kings Park Drive,"
-            android:textAppearance="?android:textAppearanceSmall"
             android:layout_below="@+id/placename"
             android:layout_alignParentRight="true"
-            android:paddingRight="16dp"
             android:paddingTop="0dp"
+            android:paddingRight="16dp"
             android:paddingBottom="8dp"
+            android:text="Kings Park Drive,"
+            android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bournemouth"
-            android:textAppearance="?android:textAppearanceSmall"
             android:layout_below="@+id/street"
             android:layout_alignParentRight="true"
-            android:paddingRight="16dp"
             android:paddingTop="0dp"
+            android:paddingRight="16dp"
             android:paddingBottom="8dp"
+            android:text="Bournemouth"
+            android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/white" />
+
 
         <TextView
             android:id="@+id/postcode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BH7 6JD"
-            android:textAppearance="?android:textAppearanceSmall"
             android:layout_below="@+id/city"
             android:layout_alignParentRight="true"
-            android:paddingRight="16dp"
+            android:onClick="location"
             android:paddingTop="0dp"
+            android:paddingRight="16dp"
             android:paddingBottom="8dp"
-            android:textColor="@android:color/white" />
+            android:text="BH7 6JD"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white" />
 
         <TextView
             android:id="@+id/since"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="sans-serif-light"
             android:paddingRight="16dp"
             android:paddingBottom="24dp"
-            android:fontFamily="sans-serif-light"
             android:text="Since 1906"
             android:textColor="@android:color/white"
             android:textSize="12sp" />
@@ -170,20 +183,20 @@
             android:id="@+id/logo1"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:scaleType="fitCenter"
-            android:layout_toLeftOf="@+id/club"
-            android:layout_alignParentLeft="true"
             android:layout_below="@+id/cityname"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/club"
+            android:scaleType="fitCenter"
             android:src="@drawable/bac" />
 
         <ImageView
             android:id="@+id/logo2"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:scaleType="fitCenter"
-            android:layout_toRightOf="@+id/club"
-            android:layout_alignParentRight="true"
             android:layout_below="@+id/cityname"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/club"
+            android:scaleType="fitCenter"
             android:src="@drawable/bac" />
 
     </RelativeLayout>
